@@ -1,0 +1,69 @@
+.Mm {
+    margin: 0vmin 5vmin;
+    margin-top: 10vmin;
+    margin-bottom: 3vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.FT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.Logo {
+    height: 7vmin;
+    margin-bottom: 2vmin;
+}
+
+.F2,
+.F3,
+.F4,
+.F5 {
+    width: 14vmin;
+    margin-right: 5vmin;
+    font-size: 1.5vmin;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+
+.F2 p,
+.F3 p,
+.F4 p,
+.F5 p {
+    opacity: 50%;
+    margin-bottom: 1.2vmin;
+    text-transform: capitalize;
+}
+
+.F5 {
+    width: 20vmin;
+}
+
+input {
+
+    height: 2.5vmin;
+    background-color: transparent;
+    border-radius: 2vmin;
+}
+
+.F1 {
+
+    font-size: 1.5vmin;
+    width: 22vmin;
+}
+
+.F1 p {
+    opacity: 50%;
+}
+
+.BB {
+    font-weight: 600;
+    font-size: 2.1vmin;
+}

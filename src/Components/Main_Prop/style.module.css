@@ -1,0 +1,50 @@
+p {
+  margin: 0;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  margin-bottom: 10vmin;
+}
+
+
+.Ft {
+  width: 40vmin;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 112px;
+  text-transform: capitalize;
+}
+
+.Ft span {
+  font-weight: 700;
+  font-size: 96px;
+  color: #ec6083;
+}
+
+.St {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 25vmin;
+  margin: 2vmin 0;
+}
+
+.Start_Btn {
+  background: #ec6083;
+  border-radius: 4vmin;
+  border: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width: 17vmin;
+  height: 5vmin;
+}
+
+.MImg {
+  height: 40vmin;
+}

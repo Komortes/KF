@@ -1,0 +1,48 @@
+.items {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 10vmin;
+}
+
+.desc {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ec6083;
+  font-weight: 700;
+  font-size: 1.5vmin;
+  line-height: 21px;
+}
+
+.title {
+  width: 30vmin;
+  margin: auto;
+  font-size: 3vmin;
+  line-height: 56px;
+  text-align: center;
+}
+
+.item {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.itemTitle {
+  margin: 2vh;
+  font-weight: 700;
+  font-size: 3vmin;
+  line-height: 42px;
+}
+
+.itemDesc {
+  width: 80%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 1vmin;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.itemImg{
+  height: 25vmin;
+}
