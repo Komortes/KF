@@ -34,7 +34,7 @@ const Main = ({ addToCart }) => {
             } else if (width <= 2350) {
                 setItemsPerPage(10);
             } else {
-                setItemsPerPage(12);
+                setItemsPerPage(10);
             }
         };
         updateItemsPerPage();
