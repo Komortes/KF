@@ -1,3 +1,4 @@
+// В файле Main.js
 import React from "react";
 import style from "./style.module.css";
 
@@ -7,16 +8,14 @@ const Main = (props) => {
             <div className={style.ItemCard}>
                 <img className={style.ProdImg} src={props.imgSrc} alt="" />
                 <p className={style.itemText}>{props.itemText}</p>
-                <div className={style.TLine}>
-                    <p className={style.itemPrice}>{props.price} $</p>
-                    <button
-                        className={style.AddB}
-                        onClick={props.addToCart}
-                    >
-                        +
-                    </button>
-                </div>
 
+                <p className={style.itemPrice}>{props.price}$</p>
+                <button
+                    className={style.AddB}
+                    onClick={props.removeFromCart}
+                >
+                    -
+                </button>
             </div>
         </div>
     )

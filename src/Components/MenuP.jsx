@@ -1,9 +1,11 @@
 import React from 'react';
 import style from './style_emp.module.css'
+import Full_Menu from './Full_Menu/Menu.jsx'
 
-const MenuP = () => {
+const MenuP = ({ addToCart }) => {
     return (
-        <div className={style.Emp}>
+        <div>
+            <Full_Menu addToCart={addToCart} />
         </div>
     );
 };

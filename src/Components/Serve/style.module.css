@@ -10,15 +10,13 @@
   text-transform: uppercase;
   color: #ec6083;
   font-weight: 700;
-  font-size: 1.5vmin;
-  line-height: 21px;
+  font-size: 1.7vmin;
 }
 
 .title {
   width: 30vmin;
   margin: auto;
   font-size: 3vmin;
-  line-height: 56px;
   text-align: center;
 }
 
@@ -31,18 +29,17 @@
   margin: 2vh;
   font-weight: 700;
   font-size: 3vmin;
-  line-height: 42px;
 }
 
 .itemDesc {
   width: 80%;
   margin: auto;
   font-weight: 400;
-  font-size: 1vmin;
-  line-height: 21px;
+  font-size: 1.3vmin;
+
   color: rgba(0, 0, 0, 0.5);
 }
 
-.itemImg{
+.itemImg {
   height: 25vmin;
 }

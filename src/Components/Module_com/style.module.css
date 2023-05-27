@@ -1,0 +1,56 @@
+.ItemCard {
+    background-color: #E9F3FD;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    height: 8vmin;
+    width: 50vmin;
+    border-radius: 1.5vmin;
+    margin-bottom: 3vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ProdImg {
+    height: 8vmin;
+    width: 8vmin;
+    border-radius: 1.5vmin;
+}
+
+.itemText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 1.8vmin;
+}
+
+.itemPrice {
+    font-weight: 600;
+    font-size: 2vmin;
+    text-align: left;
+}
+
+.AddB {
+    margin-right: 1vmin;
+    border: 0.2vmin solid #EC6083;
+    height: 3vmin;
+    width: 3vmin;
+    background-color: transparent;
+    border-radius: 6vmin;
+    color: rgb(236, 96, 131);
+    padding: 0vmin;
+    font-size: 2vmin;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: background-color 0.6s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.AddB:hover {
+    background-color: #EC6083;
+    color: #E9F3FD;
+}
+
+.AddB:active {
+    background-color: rgb(76, 175, 80);
+    border-color: #4CAF50;
+    color: #E9F3FD;
+    box-shadow: 0px 0px 5px 5px rgba(76, 175, 80, 0.9);
+}

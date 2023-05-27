@@ -7,31 +7,32 @@ p {
   justify-content: center;
   align-items: center;
   padding: 0 5%;
-  margin-bottom: 10vmin;
+  margin-bottom: 8%;
+  margin-top: 2%;
 }
 
 
 .Ft {
-  width: 40vmin;
+  width: 69%;
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
-  line-height: 112px;
+  font-size: 8vmin;
+  line-height: 100%;
   text-transform: capitalize;
 }
 
 .Ft span {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 8vmin;
   color: #ec6083;
 }
 
 .St {
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 2vmin;
   color: rgba(0, 0, 0, 0.6);
-  width: 25vmin;
-  margin: 2vmin 0;
+  width: 70%;
+  margin: 3vh 0;
 }
 
 .Start_Btn {
@@ -39,12 +40,17 @@ p {
   border-radius: 4vmin;
   border: 0;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  width: 17vmin;
-  height: 5vmin;
+  font-size: 2vmin;
+  width: 18vmin;
+  height: 6vmin;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.Start_Btn:hover {
+  box-shadow: 0 0 30px #ec6083;
 }
 
 .MImg {
-  height: 40vmin;
+  height: auto;
+  width: 45vmin;
 }

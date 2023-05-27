@@ -5,9 +5,9 @@ body {
 }
 
 header {
-  padding-top: 1vmin;
-  padding-left: 4vmin;
-  padding-right: 4vmin;
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,15 +29,18 @@ header {
 }
 
 .Top_btn a {
-  font-size: 1.5vmin;
+  font-size: 2vmin;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: black;
   text-decoration: none;
+  margin-right: 8%;
+  transition: color 0.3s ease-in-out;
 }
 
 .Top_btn a:hover {
   color: rgb(230, 69, 69);
 }
+
 
 .Top_cntrl {
   height: 3vmin;
@@ -47,6 +50,11 @@ header {
   margin-right: 1vmin;
   padding: 0vmin;
   background-color: transparent;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.Top_cntrl:hover {
+  box-shadow: 0 0 10px #cbc9c9;
 }
 
 .Top_cntrl img {

@@ -20,11 +20,6 @@ const Footer = (params) => {
                     <p>partner with us</p>
                     <p>FAQ</p>
                     <p>blog</p></div>
-                <div className={style.F4}><p className={style.BB}>Support</p>
-                    <p>account</p>
-                    <p>support center</p>
-                    <p>feedback</p>
-                    <p>contact</p></div>
                 <div className={style.F5}><p className={style.BB}>Get in touch</p>
                     <p>Question or feedback? Weed love to hear from you</p>
                     <input type="email" />

@@ -2,75 +2,92 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25vmin, 1fr));
   grid-auto-rows: auto;
-  gap: 20px;
+  gap: 2.5vmin;
   margin: 0vmin 8vmin;
   padding-top: 3vmin;
 }
 
-.ItemCard{
+.ItemCard {
   background-color: #E9F3FD;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  height:  35vmin;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  height: 35vmin;
   width: 27vmin;
-  border-radius:  2vmin;
+  border-radius: 2vmin;
   border-bottom-right-radius: 5vmin;
   border-bottom-left-radius: 5vmin;
   margin-bottom: 3vmin;
   margin-left: 1vmin;
 }
 
-.ProdImg{
-  height:  23vmin;
+.ProdImg {
+  height: 23vmin;
   width: 27vmin;
-  border-radius:  1.5vmin;
-}
-.itemText{
-  margin-top:  1.2vmin;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  opacity: 50%;
-  text-align: center;
-  font-size: 1.2vmin;
+  border-radius: 1.5vmin;
 }
 
-.itemPrice{
+.itemText {
+  margin-top: 1.2vmin;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 80%;
+  text-align: center;
+  font-size: 1.4vmin;
+}
+
+.itemPrice {
   font-weight: 700;
-  font-size:  3vmin;
+  font-size: 3vmin;
   text-align: left;
   margin-left: 2.5vmin;
 }
 
-.AddB{
-  border: 0px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.9);
+.AddB {
+  border: 0.3vmin solid #EC6083;
   height: 5vmin;
   width: 5vmin;
-  background-color: black;
+  background-color: transparent;
   border-radius: 6vmin;
-  color: white;
+  color: rgb(236, 96, 131);
   padding: 0vmin;
   font-size: 4vmin;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: background-color 0.6s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
-.TLine{
-  padding: 2vmin  2vmin;
- display: flex;
+.AddB:hover {
+  background-color: #EC6083;
+  color: #E9F3FD;
+}
+
+.AddB:active {
+  background-color: rgb(76, 175, 80);
+  border-color: #4CAF50;
+  color: #E9F3FD;
+  box-shadow: 0px 0px 5px 5px rgba(76, 175, 80, 0.9);
+}
+
+
+.TLine {
+  padding: 2vmin 2vmin;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.FT{
-  color:#EC6083;
-  font-size:  2vmin;
+.FT {
+  color: #EC6083;
+  font-size: 2.2vmin;
   margin-left: -1.7vmin;
-  margin-bottom:  1vmin;
+  margin-bottom: 1vmin;
 }
-.ST{
+
+.ST {
   margin-left: -2vmin;
   width: 44vmin;
-  font-size:  4.2vmin;
+  font-size: 4.2vmin;
   text-transform: capitalize;
-  margin-top:  0vmin;
-  margin-bottom:  3vmin;
+  margin-top: 0vmin;
+  margin-bottom: 3vmin;
 }
 
 .FL {
@@ -94,7 +111,7 @@
   align-items: center;
 }
 
-.BBLock button{
+.BBLock button {
   margin-left: 2.5vmin;
   border: 0px;
   height: 3vmin;
@@ -103,4 +120,26 @@
   color: black;
   padding: 0vmin;
   font-size: 1.5vmin;
+}
+
+.notification {
+  font-size: 1.5vmin;
+  height: 2.5vmin;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.2vmin 0.5vmin;
+  border-radius: 1vmin;
+}
+
+.notification.visible {
+  opacity: 1;
+}
+
+.notification.hidden {
+  opacity: 0;
 }

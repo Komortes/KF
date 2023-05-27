@@ -3,12 +3,45 @@ import MenuItem from "./MenuItem";
 import style from "./style.module.css";
 import { useState, useEffect } from 'react';
 
+import Notification from './Notification';
 
-const Main = () => {
+
+const Main = ({ addToCart }) => {
     const [menuItems, setMenuItems] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 8;
-    const totalPages = Math.ceil(menuItems.length / itemsPerPage);
+    const [itemsPerPage, setItemsPerPage] = useState(5);
+    const [notifications, setNotifications] = useState([]);
+    const addToCartHandler = (item) => {
+        addToCart(item);
+        const newNotification = { id: Date.now(), message: `Item added to the cart` };
+        setNotifications(prevNotifications => [...prevNotifications, newNotification]);
+        setTimeout(() => {
+            setNotifications(prevNotifications => prevNotifications.filter(notification => notification.id !== newNotification.id));
+        }, 2000);
+    };
+
+    useEffect(() => {
+
+        const updateItemsPerPage = () => {
+            const width = window.outerWidth;
+
+            if (width <= 1200) {
+                setItemsPerPage(3);
+            } else if (width <= 1600) {
+                setItemsPerPage(6);
+            } else if (width <= 1990) {
+                setItemsPerPage(8);
+            } else if (width <= 2350) {
+                setItemsPerPage(10);
+            } else {
+                setItemsPerPage(12);
+            }
+        };
+        updateItemsPerPage();
+        window.addEventListener("resize", updateItemsPerPage);
+        return () => window.removeEventListener("resize", updateItemsPerPage);
+
+    }, []);
 
     useEffect(() => {
         const url = "https://kfc-chickens.p.rapidapi.com/chickens";
@@ -29,6 +62,8 @@ const Main = () => {
     if (!Array.isArray(menuItems)) {
         return <div>Loading...</div>;
     }
+
+    const totalPages = Math.ceil(menuItems.length / itemsPerPage);
 
     const handleClickPrev = () => {
         if (currentPage > 1) {
@@ -92,9 +127,18 @@ const Main = () => {
                         imgSrc={menuItem.image}
                         itemText={menuItem.name}
                         price={menuItem.price}
+                        addToCart={() => addToCartHandler(menuItem)}
                     />
                 ))}
             </div>
+
+            {notifications.map(notification =>
+                <Notification
+                    key={notification.id}
+                    show={true}
+                    message={notification.message}
+                />
+            )}
         </div>
     );
 };

@@ -1,6 +1,6 @@
 .Mm {
-    margin: 0vmin 5vmin;
-    margin-top: 10vmin;
+    margin: 0vmin 3vmin;
+    margin-top: 7vmin;
     margin-bottom: 3vmin;
     display: flex;
     flex-wrap: wrap;
@@ -47,9 +47,10 @@
 }
 
 input {
-
+    font-size: 1.5vmin;
+    padding: 0vmin 1vmin;
     height: 2.5vmin;
-    background-color: transparent;
+    background-color: whitesmoke;
     border-radius: 2vmin;
 }
 
